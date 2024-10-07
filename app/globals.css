@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes slide {
+  0% {
+    transform: translateX(-100%); /* Start off-screen left */
+  }
+  50% {
+    transform: translateX(-0%); /* Move to off-screen right */
+  }
+  100% {
+    transform: translateX(100%); /* Come back to off-screen left */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.animate-slide {
+  animation: slide 5s ease-in-out infinite; /* Adjust duration for speed */
 }
