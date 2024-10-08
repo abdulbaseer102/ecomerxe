@@ -1,19 +1,23 @@
-import { FaUser, FaShoppingBag, FaSearch } from 'react-icons/fa';
+import { FaUser, FaShoppingBag, FaSearch, FaBars } from 'react-icons/fa';
+import Resnav from '../res/page';
 
 export default function Navbar() {
     return (
         <>
             {/* Promo Banner */}
             <div className=" text-white bg-black min-h-6 text-center py-2 font-bold">
-                
+
             </div>
 
             {/* Navbar */}
             <nav className="bg-black text-white">
                 <div className="container mx-auto flex justify-between items-center py-4 px-6">
-                    
-                    {/* Left Side - Search Icon */}
-                    <div className="flex items-center">
+
+                    <div className='lg:hidden'>
+                        <Resnav />
+                    </div>
+
+                    <div className="lg:flex items-center hidden">
                         <a href="#" className="hover:text-gray-400"><FaSearch className="text-xl" /></a>
                     </div>
 
@@ -24,16 +28,21 @@ export default function Navbar() {
                         </a>
                     </div>
 
-                    {/* Right Side - Cart and User Icons */}
-                    <div className="flex space-x-6 items-center">
-                        <a href="#" className="hover:text-gray-400"><FaUser className="text-xl" /></a>
-                        <a href="#" className="hover:text-gray-400"><FaShoppingBag className="text-xl" /></a>
+                    <div className="flex space-x-4 sm:space-x-6 items-center">
+                        {/* Search icon for mobile view */}
+                        <a href="#" className="hover:text-gray-400 lg:hidden">
+                            <FaSearch className="text-3xl sm:text-4xl" />
+                        </a>
+                        {/* Cart icon always visible */}
+                        <a href="#" className="hover:text-gray-400">
+                            <FaShoppingBag className="text-3xl sm:text-4xl lg:text-5xl" />
+                        </a>
                     </div>
                 </div>
 
                 {/* Navigation Links below the logo */}
-                <div className="bg-black py-2">
-                    <ul className="flex justify-center space-x-8 text-lg">
+                <div className="bg-black py-2 ">
+                    <ul className="hidden lg:flex justify-center space-x-8 text-lg">
                         <li><a href="#" className="hover:text-gray-400">Home</a></li>
                         <li><a href="#" className="hover:text-gray-400">Catalog</a></li>
                         <li><a href="#" className="hover:text-gray-400">Contact</a></li>

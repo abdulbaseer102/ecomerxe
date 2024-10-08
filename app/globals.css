@@ -17,3 +17,9 @@
 .animate-slide {
   animation: slide 5s ease-in-out infinite; /* Adjust duration for speed */
 }
+
+@layer base {
+  :root {
+    --radius: 0.5rem
+  }
+}
