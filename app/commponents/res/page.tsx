@@ -31,7 +31,7 @@ export default function Resnav() {
                   
                 </div>
                 
-                        <div className="bg-gray-200 mt-[250%] w-48 p-2 rounded-2xl ">
+                        <div className="bg-gray-200 mt-[220%] w-48 p-2 rounded-2xl ">
                             <UserIcon /> <h1>Log in</h1>
                         </div>
             

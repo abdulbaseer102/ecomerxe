@@ -1,5 +1,6 @@
 import { FaUser, FaShoppingBag, FaSearch, FaBars } from 'react-icons/fa';
 import Resnav from '../res/page';
+import { User2Icon } from 'lucide-react';
 
 export default function Navbar() {
     return (
@@ -23,19 +24,22 @@ export default function Navbar() {
 
                     {/* Logo Centered */}
                     <div className="text-center absolute left-1/2 transform -translate-x-1/2">
-                        <a href="#" className="text-3xl font-bold">
+                        <a href="#" className="text-3xl font-bold ">
                             AZAIB <span className="font-extrabold">Fragrances</span>
                         </a>
                     </div>
 
-                    <div className="flex space-x-4 sm:space-x-6 items-center">
+                    <div className="flex space-x-4 sm:space-x-6 items-center ml-10">
                         {/* Search icon for mobile view */}
                         <a href="#" className="hover:text-gray-400 lg:hidden">
                             <FaSearch className="text-3xl sm:text-4xl" />
                         </a>
                         {/* Cart icon always visible */}
                         <a href="#" className="hover:text-gray-400">
-                            <FaShoppingBag className="text-3xl sm:text-4xl lg:text-5xl" />
+                            <FaShoppingBag className="text-2xl sm:text-5xl lg:text-2xl" />
+                        </a>
+                        <a href="#" className="hover:text-gray-400">
+                            <User2Icon className="text-5xl hidden lg:flex" />
                         </a>
                     </div>
                 </div>
