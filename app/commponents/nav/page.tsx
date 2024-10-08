@@ -25,11 +25,11 @@ export default function Navbar() {
                     {/* Logo Centered */}
                     <div className="text-center absolute left-1/2 transform -translate-x-1/2">
                         <a href="#" className="text-3xl font-bold ">
-                            AZAIB <span className="font-extrabold">Fragrances</span>
+                            AZAIB <span className="font-extrabold"> <br/>Fragrances</span>
                         </a>
                     </div>
 
-                    <div className="flex space-x-4 sm:space-x-6 items-center ml-10">
+                    <div className="flex space-x-4 sm:space-x-6 items-center ">
                         {/* Search icon for mobile view */}
                         <a href="#" className="hover:text-gray-400 lg:hidden">
                             <FaSearch className="text-3xl sm:text-4xl" />
