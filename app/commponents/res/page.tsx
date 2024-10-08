@@ -24,15 +24,18 @@ export default function Resnav() {
                
                <div className="justify-between">
                     <ul className="justify-center gap-5 text-lg mt-8 ">
-                        <li><a href="#" className="hover:underline ">Home</a></li>
-                        <li><a href="#" className="hover:underline ">Catalog</a></li>
-                        <li><a href="#" className="hover:underline">Contact</a></li>
+                        <li><a href="/" className="hover:underline ">Home</a></li>
+                        <li><a href="/commponents/card" className="hover:underline ">Catalog</a></li>
+                        <li><a href="/commponents/contact" className="hover:underline">Contact</a></li>
                     </ul>
                   
                 </div>
                 
                         <div className="bg-gray-200 mt-[220%] w-48 p-2 rounded-2xl ">
-                            <UserIcon /> <h1>Log in</h1>
+                          <a href="/commponents/all">
+                          <UserIcon /> <h1>Log in</h1>
+                          </a>
+                           
                         </div>
             
                
