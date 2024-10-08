@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export default const ProductCard= ({ id, title, price, image, onSale }) => {//+"55088ad0-65b2-41c3-b81c-3cbf60d16b46","source":"instruct"}
+ const ProductCard= ({ id, title, price, image, onSale }) => {//+"55088ad0-65b2-41c3-b81c-3cbf60d16b46","source":"instruct"}
     return (
         <div>
 
