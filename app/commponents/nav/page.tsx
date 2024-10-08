@@ -29,9 +29,9 @@ export default function Navbar() {
                         </a>
                     </div>
 
-                    <div className="flex space-x-4 sm:space-x-6 items-center ">
+                    <div className="flex space-x-4 sm:space-x-6 items-center -mr-4">
                         {/* Search icon for mobile view */}
-                        <a href="#" className="hover:text-gray-400 lg:hidden">
+                        <a href="#" className="hover:text-gray-400 lg:hidden ">
                             <FaSearch className="text-3xl sm:text-4xl" />
                         </a>
                         {/* Cart icon always visible */}
