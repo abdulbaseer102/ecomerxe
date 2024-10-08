@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const ProductCard  = ( id, title, price, image, onSale) => {//+"55088ad0-65b2-41c3-b81c-3cbf60d16b46","source":"instruct"}
+export const ProductCard: React.FC<{ id: number; title: string; price: number; image: string; onSale: boolean }> = ({ id, title, price, image, onSale }) => {//+"55088ad0-65b2-41c3-b81c-3cbf60d16b46","source":"instruct"}
     return (
         <div>
 
