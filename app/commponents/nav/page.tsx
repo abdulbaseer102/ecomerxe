@@ -1,4 +1,4 @@
-import { FaUser, FaShoppingBag, FaSearch, FaBars } from 'react-icons/fa';
+import {  FaShoppingBag, FaSearch, } from 'react-icons/fa';
 import Resnav from '../res/page';
 import { User2Icon } from 'lucide-react';
 
@@ -35,10 +35,10 @@ export default function Navbar() {
                             <FaSearch className="text-3xl sm:text-4xl" />
                         </a>
                         {/* Cart icon always visible */}
-                        <a href="#" className="hover:text-gray-400">
+                        <a href="/commponents/cart" className="hover:text-gray-400">
                             <FaShoppingBag className="text-2xl sm:text-5xl lg:text-2xl" />
                         </a>
-                        <a href="#" className="hover:text-gray-400">
+                        <a href="/commponents/all" className="hover:text-gray-400">
                             <User2Icon className="text-5xl hidden lg:flex" />
                         </a>
                     </div>
@@ -47,9 +47,9 @@ export default function Navbar() {
                 {/* Navigation Links below the logo */}
                 <div className="bg-black py-2 ">
                     <ul className="hidden lg:flex justify-center space-x-8 text-lg">
-                        <li><a href="#" className="hover:text-gray-400">Home</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Catalog</a></li>
-                        <li><a href="#" className="hover:text-gray-400">Contact</a></li>
+                        <li><a href="/" className="hover:underline">Home</a></li>
+                        <li><a href="/commponents/cards" className="hover:underline">Catalog</a></li>
+                        <li><a href="/commponents/contact" className="hover:underline">Contact</a></li>
                     </ul>
                 </div>
             </nav>

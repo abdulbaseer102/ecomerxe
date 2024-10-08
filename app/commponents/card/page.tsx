@@ -1,5 +1,6 @@
+import Link from 'next/link';
 import React from 'react';
-
+import CartPage from '../cart/page';
 
 export default function  ProductCard ({ id, title, price, image, onSale })  {
     return (
@@ -34,7 +35,9 @@ export default function  ProductCard ({ id, title, price, image, onSale })  {
                         Buy Now
                     </button>
                     <button className="mt-4 w-full bg-slate-900 text-white py-2 px-4 rounded-md hover:bg-slate-700 transition duration-300 ease-in-out">
+                        <a href='/commponents/cart'>
                         Add to Cart
+                        </a>
                     </button>
                 </div>
             </div>
