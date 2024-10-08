@@ -82,7 +82,7 @@ const CartPage = () => {
         <div className="mt-6 text-right">
           <h2 className="text-xl font-bold">Total: ${totalPrice}</h2>
           <button className="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
-            Checkout
+            <a href="/commponents/checkout">Checkout</a>
           </button>
         </div>
       )}
