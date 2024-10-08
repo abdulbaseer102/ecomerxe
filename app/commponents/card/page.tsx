@@ -32,7 +32,8 @@ export default function  ProductCard ({ id, title, price, image, onSale })  {
 
                     {/* Add to Cart Button */}
                     <button className="mt-4 w-full bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600 transition duration-300 ease-in-out">
-                        Buy Now
+                      <a href="/commponents/checkout">Buy Now
+                        </a>  
                     </button>
                     <button className="mt-4 w-full bg-slate-900 text-white py-2 px-4 rounded-md hover:bg-slate-700 transition duration-300 ease-in-out">
                         <a href='/commponents/cart'>
